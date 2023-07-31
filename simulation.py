@@ -15,9 +15,9 @@ def simulate_drone(x,u,x_ref,params,n_iter,delta_t):
         x[5] = x[5] + x_t1[2] * delta_t
 
 
-        Kp_x = 3
-        Kp_y = 2
-        Kp_th = 1.0
+        Kp_x = 1
+        Kp_y = 1
+        Kp_th = 7.0
         [u,T_d_y,T_d_x] = simple_PID (x,x_ref,Kp_x,Kp_y, Kp_th)
         plot_traj(x,u,x_ref,params,T_d_y,T_d_x)
 
