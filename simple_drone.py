@@ -24,14 +24,13 @@ if __name__ == '__main__':
     a=1500
 
     # reference
-    x_ref = [1.0,1.0]
+    x_ref = [3.0,4]
 
     # simulation settings
     n_iter = 2000
-    delta_t = 0.15
-    xt = simulate_drone(x,u,x_ref,params,n_iter,delta_t)
-    plot_traj(x, u, params)
-
+    delta_t = 0.05
+    [xt,T_d_y,T_d_x] = simulate_drone(x,u,x_ref,params,n_iter,delta_t)
+    plot_traj(x, u,x_ref, params,T_d_y,T_d_x)
     #plt.show()
     #x = xt
 
