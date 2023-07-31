@@ -8,7 +8,7 @@ from simple_control import simple_PID
 if __name__ == '__main__':
     # drone params
     l = 1
-    m = 0.5
+    m = 1.0
     J = 1
     params = [l, m , J]
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     a=1500
 
     # reference
-    x_ref = [3.0,4]
+    x_ref = [1.0,1.0]
 
     # simulation settings
     n_iter = 2000
