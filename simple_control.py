@@ -9,7 +9,7 @@ def simple_PID (x,x_ref,Kp_x,Kp_y, Kp_th):
     Kd_x = Kp_x * 4000.0
 
     Kd_th = Kp_th * 3
-    Kp1_x = 900000 * Kp_x
+    Kp1_x = 3000000 * Kp_x
     Kd1_x = 8700 * Kd_x
 
     #Compute errors in x and y
@@ -50,6 +50,7 @@ def simple_PID (x,x_ref,Kp_x,Kp_y, Kp_th):
 
 
     return u, T_d_y, T_d_x
+
 
 
 
